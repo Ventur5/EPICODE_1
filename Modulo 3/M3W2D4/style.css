@@ -59,3 +59,19 @@ h2 {
     padding: 10px 20px;
     transition: background-color 0.3s ease;;
 }
+
+.p-text {
+    font-size: small;
+}
+
+.img-dayGift {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.span-price {
+    font-size: 15px;
+    font-weight: small;
+}
