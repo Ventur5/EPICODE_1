@@ -1,0 +1,82 @@
+body {
+  overflow-x: hidden;
+}
+
+.burger-menu {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.hamburger-icon {
+  width: 40px;
+  height: 40px;
+  stroke: rgb(0, 0, 0);
+}
+
+.hamburger-line {
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.hamburger-icon.animate .line1 {
+  transform: rotate(45deg) translate(0px, 6px);
+}
+
+.hamburger-icon.animate .line2 {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger-icon.animate .line3 {
+  transform: rotate(-45deg) translate(0px, -6px);
+}
+
+.side-bar {
+  width: 350px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.side-bar.show {
+  transform: translateX(0);
+}
+
+.menu {
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+
+.menu.menu-opacity {
+  opacity: 1;
+}
+
+nav {
+  background-color: transparent;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+
+.navbar-color {
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+.hero-img {
+  opacity: 0;
+  transform: translateX(120%);
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-img.img-translate {
+  opacity: 1;
+  transform: translateX(0);
+}
