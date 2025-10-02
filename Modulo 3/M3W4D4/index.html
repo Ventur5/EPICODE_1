@@ -1,88 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Landing Professionale</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <nav class="container-fluid py-3">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex justify-content-between align-items-center">
-            <h1 class="m-0">Site Name</h1>
-            <button class="burger-menu">
-              <svg
-                fill="currentColor"
-                class="hamburger-icon"
-                viewBox="0 0 28 28"
-              >
-                <path class="hamburger-line line1" d="M 6 8 L 22 8" />
-                <path class="hamburger-line line2" d="M 6 14 L 22 14" />
-                <path class="hamburger-line line3" d="M 6 20 L 22 20" />
-              </svg>
-            </button>
-          </div>
-        </div>
+    <nav class="navbar fixed-top shadow-sm px-4 py-3 bg-white">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <h2 class="fw-bold m-0 text-primary">MyBrand</h2>
+        <button class="burger-menu">
+          <svg fill="currentColor" class="hamburger-icon" viewBox="0 0 28 28">
+            <path class="hamburger-line line1" d="M 6 8 L 22 8" />
+            <path class="hamburger-line line2" d="M 6 14 L 22 14" />
+            <path class="hamburger-line line3" d="M 6 20 L 22 20" />
+          </svg>
+        </button>
       </div>
     </nav>
 
-    <aside class="side-bar bg-dark">
-      <ul class="menu list-unstyled p-4 text-light">
-        <li>Home</li>
-        <li>Chi siamo</li>
-        <li>Dove andiamo?</li>
-        <li>Quanti siamo?</li>
-        <li>Perché siamo?</li>
+    <aside class="side-bar bg-primary text-white">
+      <ul class="menu list-unstyled p-4">
+        <li class="mb-3"><i class="bi bi-house me-2"></i>Home</li>
+        <li class="mb-3"><i class="bi bi-people me-2"></i>Chi siamo</li>
+        <li class="mb-3"><i class="bi bi-geo-alt me-2"></i>Dove andiamo?</li>
+        <li class="mb-3"><i class="bi bi-graph-up me-2"></i>Quanti siamo?</li>
+        <li><i class="bi bi-question-circle me-2"></i>Perché siamo?</li>
       </ul>
     </aside>
 
-    <section class="hero container-fluid mt-5">
-      <div class="row mb-3">
-        <div class="col-12">
-          <div class="d-flex justify-content-between align-items-center">
-            <h3 class="m-0">Hero with image on right</h3>
-          </div>
-        </div>
-      </div>
-
+    <section class="hero container py-5 mt-5">
       <div class="row align-items-center">
-        <div class="col-12 col-md-6 mb-4 mb-md-0">
-          <div>
-            <h1>Your landing page title here</h1>
-            <p>
-              This landing page is perfect for showing off your awesome product
-              and driving people to sign up for a paid plan.
-            </p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold">Benvenuto su MyBrand</h1>
+          <p class="lead text-muted">
+            Siamo il futuro della tua idea. Scopri come possiamo aiutarti a
+            crescere con stile, tecnologia e innovazione.
+          </p>
+          <button class="btn btn-primary btn-lg">Inizia ora</button>
         </div>
-
-        <div class="col-12 col-md-6">
+        <div class="col-md-6">
           <img
-            src="https://picsum.photos/2000/600"
-            class="w-100 object-fit-cover hero-img"
-            alt="Landing illustration"
+            src="https://picsum.photos/800/500"
+            alt="Hero Image"
+            class="img-fluid rounded hero-img"
           />
         </div>
       </div>
     </section>
 
+    <section class="services bg-light py-5">
+      <div class="container text-center">
+        <h2 class="mb-4 fw-bold">Cosa offriamo</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <h4>Consulenza</h4>
+              <p class="text-muted">
+                Analisi e soluzioni su misura per il tuo business.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <h4>Design</h4>
+              <p class="text-muted">
+                Creiamo esperienze visive moderne e coinvolgenti.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 border rounded h-100 shadow-sm">
+              <h4>Sviluppo</h4>
+              <p class="text-muted">
+                Dall’idea al codice, sviluppiamo il tuo prodotto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">© 2025 MyBrand - Tutti i diritti riservati</p>
+    </footer>
+
+    <!-- Script -->
     <script src="./main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </body>
 </html>
